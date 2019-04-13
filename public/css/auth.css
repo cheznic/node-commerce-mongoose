@@ -1,0 +1,12 @@
+.login-form {
+  width: 20rem;
+  max-width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.login-note {
+  margin: auto;
+  width: 20rem;
+  max-width: 90%;
+}
