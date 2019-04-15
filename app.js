@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // initialize multi-part form handler for file uploads
 const multer = require('multer');
-const nanoid = require('nanoid')
+const nanoid = require('nanoid');
 const filter = (req, file, cb) => {
   if (
     file.mimetype === 'image/png' ||
@@ -26,7 +26,7 @@ const fileStore = multer.diskStorage({
   },
   filename: (req, file, cb) => {
     let name = nanoid();
-    let ext = file.originalname.split('.').pop()
+    let ext = file.originalname.split('.').pop();
     cb(null, `${name}.${ext}`);
   }
 })
